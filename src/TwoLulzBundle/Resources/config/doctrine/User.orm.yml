@@ -1,0 +1,15 @@
+TwoLulzBundle\Entity\User:
+    type: entity
+    table: fos_user
+    repositoryClass: TwoLulzBundle\Repository\UserRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    oneToMany:
+          comments:
+            targetEntity: Comment
+            mappedBy: user
+    lifecycleCallbacks: {  }

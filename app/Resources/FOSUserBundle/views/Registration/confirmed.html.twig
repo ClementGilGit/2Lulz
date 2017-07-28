@@ -1,0 +1,12 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+    <p>{{ 'Incsription confirmé'|trans({'%username%': user.username}) }}</p>
+    <div class="card row" style="padding: 20px;">
+        <div class="card-content">
+            <a href="/"><button>Continuer</button></a>
+        </div>
+    </div>
+{% endblock fos_user_content %}

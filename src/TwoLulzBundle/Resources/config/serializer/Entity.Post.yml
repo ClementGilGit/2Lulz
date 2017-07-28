@@ -1,0 +1,8 @@
+TwoLulzBundle\Entity\Post:
+
+  exclusion_policy: ALL
+  properties :
+      id:
+      title:
+      image:
+          expose : true

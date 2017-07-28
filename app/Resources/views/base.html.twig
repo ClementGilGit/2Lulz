@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        
+        {% block stylesheets %}
+                <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+               <link rel="stylesheet" href="{{ asset('component/materialize/css/materialize.min.css')}}"/>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <style>
+            .center-content{
+                text-align: center;
+            }
+            
+            .tomato{
+                background-color: tomato;
+            }
+
+            body{
+                background: #91BACF;
+            }
+        </style>
+        {% block javascripts %}
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="{{asset('component/materialize/js/materialize.min.js')}}"></script>
+        {% endblock %}
+    </head>
+        {% block body %}
+        {% endblock %}
+</html>
