@@ -1,6 +1,6 @@
-2Lulz Projet Symfony Licence Web
-Pelmoine Rémi & Gil Clément
-========================
+Projet Symfony Licence Web
+Gil Clément & Pelmoine Rémi 
+==========================
 
 Le but de ce projet était de recréer un 9Gag en symfony
 
